@@ -1,10 +1,4 @@
-// var x = 40;
-// var y = 20;
-// var result = (x<y )||(x==40);
-// var results = (x<y )&&(x==40);
-// console.log(results)
 
-// console.log(result)
 
 // odd number programme
 // for(var i = 0; i<=10; i++){

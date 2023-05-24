@@ -49,3 +49,84 @@ order: 3      value in the arraywhich is at the index of  3 :  6
 order: 2      value in the arraywhich is at the index of  2 :  7
 order: 1      value in the arraywhich is at the index of  1 :  8
 order: 0      value in the arraywhich is at the index of  0 :  9
+
+
+
+// programme to print even and odd indexes
+var arr = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19]
+for(let i=0; i<arr.length;i++){
+    if(i%2==0){
+        console.log("order:",i,"     value in the arraywhich is at the index is at the even number is  ",i, ": ",arr[i])
+    }  
+
+    if(i%2==1){
+        console.log("order:",i,"     value in the arraywhich is at the index is at the odd number is  ",i, ": ",arr[i])
+
+    }
+}
+
+
+output:
+
+order: 1      value in the arraywhich is at the index is at the odd number is   1 :  2
+order: 2      value in the arraywhich is at the index is at the even number is   2 :  3
+order: 3      value in the arraywhich is at the index is at the odd number is   3 :  4
+order: 4      value in the arraywhich is at the index is at the even number is   4 :  5
+order: 5      value in the arraywhich is at the index is at the odd number is   5 :  6
+order: 6      value in the arraywhich is at the index is at the even number is   6 :  7
+order: 7      value in the arraywhich is at the index is at the odd number is   7 :  8
+order: 8      value in the arraywhich is at the index is at the even number is   8 :  9
+order: 9      value in the arraywhich is at the index is at the odd number is   9 :  10
+order: 10      value in the arraywhich is at the index is at the even number is   10 :  11
+order: 11      value in the arraywhich is at the index is at the odd number is   11 :  12
+order: 12      value in the arraywhich is at the index is at the even number is   12 :  13
+order: 13      value in the arraywhich is at the index is at the odd number is   13 :  14
+order: 14      value in the arraywhich is at the index is at the even number is   14 :  15
+order: 15      value in the arraywhich is at the index is at the odd number is   15 :  16
+order: 16      value in the arraywhich is at the index is at the even number is   16 :  17
+order: 17      value in the arraywhich is at the index is at the odd number is   17 :  18
+order: 18      value in the arraywhich is at the index is at the even number is   18 :  19
+
+
+// programme to print even and odd indexes
+var arr = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19]
+for(let i=0; i<arr.length;i++){
+    if(i%2==0){
+        console.log("order:",i,"     value in the arraywhich is at the index is at the even number is  ",i, ": ",arr[i])
+    }  
+
+   
+}
+output:
+order: 0      value in the arraywhich is at the index is at the even number is   0 :  1
+order: 2      value in the arraywhich is at the index is at the even number is   2 :  3
+order: 4      value in the arraywhich is at the index is at the even number is   4 :  5
+order: 6      value in the arraywhich is at the index is at the even number is   6 :  7
+order: 8      value in the arraywhich is at the index is at the even number is   8 :  9
+order: 10      value in the arraywhich is at the index is at the even number is   10 :  11
+order: 12      value in the arraywhich is at the index is at the even number is   12 :  13
+order: 14      value in the arraywhich is at the index is at the even number is   14 :  15
+order: 16      value in the arraywhich is at the index is at the even number is   16 :  17
+order: 18      value in the arraywhich is at the index is at the even number is   18 :  19
+
+
+
+
+// programme to print all the even values stored in the arrays
+var arr = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19]
+for(let i=0; i<arr.length;i++){
+    if(arr[i]%2==0){
+        console.log("order:",i,"     value in the arraywhich is at the index is at the even number is  ",i, ": ",arr[i])
+    }  }
+    
+    output:
+    
+    order: 1      value in the arraywhich is at the index is at the even number is   1 :  2
+order: 3      value in the arraywhich is at the index is at the even number is   3 :  4
+order: 5      value in the arraywhich is at the index is at the even number is   5 :  6
+order: 7      value in the arraywhich is at the index is at the even number is   7 :  8
+order: 9      value in the arraywhich is at the index is at the even number is   9 :  10
+order: 11      value in the arraywhich is at the index is at the even number is   11 :  12
+order: 13      value in the arraywhich is at the index is at the even number is   13 :  14
+order: 15      value in the arraywhich is at the index is at the even number is   15 :  16
+order: 17      value in the arraywhich is at the index is at the even number is   17 :  18

@@ -1,0 +1,93 @@
+
+
+//this is just mathwematical operation function
+function k(x){
+  var  x = x*x+111-x/1;
+    return x;
+}
+
+var f = k(2);
+console.log(f);
+var ko = k(10);
+console.log(ko);
+console.log(k(100));
+
+//function to know whether the number is evemn or not
+
+function isEven(x){
+    if(x%2==0){
+        return true;
+    } else{
+        return false;
+    }
+}
+
+var kl = isEven(11);
+console.log(kl);
+var ll = isEven(10);
+console.log(ll);
+
+
+//multiplier function
+function multiplier(arr){
+    for(i = 0; i<arr.length;i++){
+        arr[i] =  arr[i] *2;
+    }
+    return arr;
+}
+var inputarr = [2,7,9];
+var output = multiplier(inputarr);
+console.log(output);
+
+
+//passing array into the function whiuch counts the even numbers
+function countEvenNumbers(arr){
+    let count =0;
+    for(let i =0; i<arr.length;i++){
+        if(arr[i]%2===0){
+            count++;
+        }
+    } return count;
+
+}
+
+const inputArray = [11,22,33,44,66,77,88,99];
+const outputArray = countEvenNumbers(inputArray);
+console.log(outputArray);
+
+
+
+
+// just a greeting function
+ function greet(hi){
+    console.log(`hello ${hi}`)
+    return  hi;}
+
+greet('rtjtrj')
+
+
+//finfing the maximumn number in the array
+let arr = [1, 2, 3, 4, 5, 6];
+let max = Math.max(...arr);
+console.log(max);
+
+
+
+//rRolling a dice, which can return a random number using math .floor and math.random
+
+function rollingDice(){
+    let roll = Math.floor(Math.random()*6)+1;
+    console.log(`output of dice is ${roll}`)
+}
+function throwingOfDice(number){
+    for (let i =0;i<=number;i++){
+rollingDice();
+  
+  
+  }
+  }
+
+  throwingOfDice(6);
+
+
+

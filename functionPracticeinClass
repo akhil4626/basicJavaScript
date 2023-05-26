@@ -1,0 +1,138 @@
+//function to swap the numbers
+
+function swap(arr) {
+    for (let i = 0; i < arr.length - 1; i++) {
+      let a = arr[i];
+      let b = arr[i + 1];
+  
+      arr[i + 1] = a;
+      arr[i] = b;
+    }
+    return arr;
+  }
+  
+  let arr = [1, 2,3,4];
+  let karr = swap(arr);
+  console.log(karr);
+  
+  
+  
+    //Write a program in Java script using functions to count 0 and 1 in an array[0,1,1,1,0,0,0,0,1,1,1,1]
+
+  function count(array){
+  let count0 = 0;
+  let count1 = 0;
+  for(let i =0; i<array.length;i++){
+    if(array[i]===0){
+        count0++;
+    }
+    else{
+        count1++;
+    }
+  }
+return[count0,count1];
+}
+
+let array = [0,1,1,1,0,0,0,0,1,1,1,1];
+   let karr = count(array);
+   console.log(karr);
+   
+   
+   //write a programme to replace any negative value in the array with zero.
+function replace(array){
+    for(let i =0; i<array.length;i++){
+        if(array[i]<0){
+            array[i]=0;
+        }
+    }
+
+return array;
+}
+
+let array = [0,-1,-1,-1,0,0,0,0,-1,-1,-1,-1];
+   let karr = replace(array);
+   console.log(karr);
+
+
+
+
+//Write a program to have the count of values , divisible by5 in an array
+
+function divisibleByFive(array){
+    let count =0;
+    for(let i=0; i<array.length;i++){
+   if(array[i]%5==0){
+
+    count++
+   }
+    }
+console.log(count);
+return count;
+
+
+divisibleByFive([5,10,15,20,25,30,35,40,45,50,51,55,69,70]);
+
+
+
+// print numbers in reverse order in array;
+function printNUmberInReverseOrder(array){
+    for(let i=array.length-1;i>0;i--){
+        console.log(i);
+
+    }
+}
+
+printNUmberInReverseOrder([1,2,3,4,5,6,7,8,9,10])
+
+
+
+// print out which are divisible by 2&5
+
+function divisibleBy2And5(array){
+count = 0;
+for(let i =0; i<array.length;i++){
+  if((array[i]%2===0) && (array[i]%5===0)){
+    count++;
+  }
+
+}
+console.log(count);
+return count;
+}
+
+divisibleBy2And5([10,20,30,40,50,51,51,5,1,88,88,77,99]);
+
+
+
+ //write a function to count all the negative number
+
+function findingNegativeNumber(array){
+    let count = 0;
+    for(let i=0;i<array.length;i++){
+        if(array[i]<0){
+        count++;
+        }
+    }
+console.log(count);
+return count;
+}
+
+
+findingNegativeNumber([-1,-5])
+
+
+ //write a function to count all the positive number
+
+function findingPositiveNumber(array){
+    let count = 0;
+    for(let i=0;i<array.length;i++){
+        if(array[i]>0){
+        count++;
+        }
+    }
+console.log(count);
+return count;
+}
+
+
+findingPositiveNumber([1,5])

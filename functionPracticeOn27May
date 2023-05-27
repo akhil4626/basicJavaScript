@@ -1,0 +1,106 @@
+//simple intrest formula
+
+function simpleIntrest(p,t,r){
+    let simpleintrest1step = (p*t*r);
+    let simpleIntrest2step = (simpleintrest1step/100);
+    console.log(simpleIntrest2step);
+}
+simpleIntrest(1,2,4);
+
+
+//area of circle
+
+function areaOfTheCircle(radius){
+let radiusSquare = radius*radius;
+const pi = 3.14;
+let circleArea = pi *radiusSquare;
+
+console.log(circleArea);
+return areaOfTheCircle;
+
+
+}
+
+areaOfTheCircle(2);
+
+//print the smallest number in the array
+
+ function minNum(arr){
+    let min = arr[0];
+    for(let i =0;i<arr.length;i++){
+        if(arr[i]<min){
+            min = arr[i];
+
+        }
+    }
+return min;
+}
+
+let array = [-1,1,2,3,4,5,6,0,-2,7,89,88];
+let varrr =minNum(array);
+console.log(varrr);
+
+
+//in given number(01234567890) add  0th,3rd,6th,9th  numbers
+
+function addThreeSixNine(arr){
+    let addNumber = 0;
+    for(let i=0; i<arr.length;i+=3){
+       addNumber+=arr[i];
+    }
+    console.log(addNumber);
+    return addNumber;
+}
+
+addThreeSixNine([0,1,2,3,4,5,6,7,8,9]);
+
+
+//finding the largest number in an array
+function largestNumber(arr){
+    let largeNum =arr[0];
+
+    for(let i =0;i<arr.length;i++){
+        if(arr[i]>largeNum){
+            largeNum =arr[i];
+        }
+    }
+console.log(largeNum);
+return largeNum;
+}
+
+let array = [99,100,110,120,80,50,40,10,555,111,0,2,4,6,8,11,12,13,14];
+
+let varrr = largestNumber(array);
+
+console.log(largestNumber);
+
+
+//sum 0of the numbewrs in an arreay
+
+function sumOfTheNumbersInArray(array){
+    let summ =0;
+
+    for(let i =0;i<array.length;i++){
+        summ = summ+array[i];
+    }
+    console.log(summ);
+    return summ;
+}
+
+sumOfTheNumbersInArray([0,1,2,3,4,5]);
+
+//numbers divisbleby 5
+function divisibleBy5(array){
+    let count = 0;
+    for(let i =0; i<array.length;i++){
+        if(array[i]%5===0){
+            count++;
+        }
+   
+    }
+console.log(count);
+return count;
+
+}
+
+divisibleBy5([5,10,15,20,25,30,35])

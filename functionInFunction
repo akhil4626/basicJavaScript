@@ -1,0 +1,45 @@
+//assignig a function to a variable
+let c = function(x,y){
+    let z = x+y;
+    console.log(z);
+    return z;
+}
+
+c(5,9);
+
+
+//passing an function as a parameter to an another function
+function fInFFunction(func,funct,functi,functio,x,y){
+    let result = func(x,y);
+    let result1 = funct(x,y);
+    let result2 = functi(x,y);
+    let result3 =functio(x,y);
+    console.log("the result of the first given operation is"+ " " +result);
+    console.log("the result of the second given operation is"+ " " +result1);
+    console.log("the result of the second given operation is"+ " " +result2);
+    console.log("the result of the second given operation is"+ " " +result3);
+
+    return [result,result1,result2,result3];
+}
+
+function add(x,y){
+    let z = x+y;
+    return z;
+}
+
+function sub(x,y){
+    let z = x-y;
+    return z;
+}
+
+function mul(x,y){
+    let z = x*y;
+    return z;
+}
+function div(x,y){
+    let z = x*y;
+    return z;
+}
+
+
+fInFFunction(add,sub,mul,div,5,6);

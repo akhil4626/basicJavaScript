@@ -164,3 +164,47 @@ function acceptsNumber(x){
 
 acceptsNumber(3)(5);
 
+
+
+//function accept a number we want to return a function that alsoacceps a number, we want to return in that function x times num another version
+
+function acceptsNumber(x){
+    return function(m){
+       let  operation = m*x;
+        console.log("the result of the operation is "+operation);
+        return operation;
+    }
+}
+
+const operationOnConst = acceptsNumber(10);
+operationOnConst(2);
+
+
+
+//function accept a number we want to return a function that alsoacceps a number, we want to return in that function x times num another version
+
+function acceptsNumber(x){
+    return function(m){
+       let  operation = m*x;
+       console.log("");
+
+        console.log("the result of the operation is "+operation);
+        console.log("");
+        return operation;
+    }
+}
+
+const operationOnConst = acceptsNumber(10);
+operationOnConst(2);
+operationOnConst(3);
+operationOnConst(4);
+operationOnConst(5);
+operationOnConst(6);
+operationOnConst(7);
+operationOnConst(8);
+operationOnConst(9);
+operationOnConst(10);
+operationOnConst(11);
+operationOnConst(12);
+operationOnConst(13);
+operationOnConst(14);

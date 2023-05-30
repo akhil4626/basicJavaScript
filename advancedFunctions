@@ -151,3 +151,16 @@ zerodha(3)(1,1,1);
 
 abc()();
 
+
+//function accept a number we want to return a function that alsoacceps a number, we want to return in that function x times num
+
+function acceptsNumber(x){
+    return function(m){
+       let  operation = m*x;
+        console.log("the result of the operation is "+operation);
+        return operation;
+    }
+}
+
+acceptsNumber(3)(5);
+

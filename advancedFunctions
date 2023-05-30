@@ -131,5 +131,23 @@ function zerodha(x){
     }
 }
 
-zerodha(3)(1,1,1)
+zerodha(3)(1,1,1);
+
+
+
+//function as an argument to another function
+
+
+//function abc(){
+    console.log("GT:Aava de. csk:poda dei.");
+    return function(){
+        let gt = "aava de";
+        console.log("hello  world bro bharat chandra gada");
+        console.log(gt);
+        return gt;
+    }
+}
+
+
+abc()();
 

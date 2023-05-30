@@ -1,0 +1,135 @@
+//Working with the annonymus function
+
+let c = function(x,y){
+    let z = x+y;
+    console.log(z);
+    return z;
+}
+
+c(5,9);
+
+
+//passing multiple functions as the arguments to one another
+
+
+function fInFFunction(func,funct,functi,functio,x,y){
+    let result = func(x,y);
+    let result1 = funct(x,y);
+    let result2 = functi(x,y);
+    let result3 =functio(x,y);
+    console.log("the result of the first given operation is"+ " " +result);
+    console.log("the result of the second given operation is"+ " " +result1);
+    console.log("the result of the second given operation is"+ " " +result2);
+    console.log("the result of the second given operation is"+ " " +result3);
+
+    return [result,result1,result2,result3];
+}
+
+function add(x,y){
+    let z = x+y;
+    console.log(z);
+
+    return z;
+
+}
+
+function sub(x,y){
+    let z = x-y;
+    return z;
+}
+
+function mul(x,y){
+    let z = x*y;
+    return z;
+}
+function div(x,y){
+    let z = x/y;
+    return z;
+}
+add(5,6);
+add(6,7);
+add(7,8);
+fInFFunction(div,mul,sub,add,5,6);
+
+
+//multiple function to find the average function,highest number, lowest number
+
+
+
+function fmsDelhi(f,fu,fun,x,y,z){
+    let result = f(x,y,z);
+    let result1 = fu(x,y,z);
+    let result2 = fun(x,y,z);
+    console.log("average of the given three numbers "+" "+result);
+    // console.log("the result of the first function  fu is "+result1);
+    // console.log("the result of the first function  fun is "+result2);
+}
+
+function average(a,b,c){
+    let ko = a+b+c;
+    let koj =ko/3;
+console.log(koj);
+return koj;
+}
+10,20,30     
+function highestNumber(a,b,c){
+    if((a>b)&&(a>c)){
+        console.log(+a +" " +"is the greatest number of the given lot");
+        return a;
+    }
+    else if((b>a)&&(b>c)){
+        console.log(+b +" " +"is the greatest number of the given lot");
+        return b;
+    }
+    else if((a===b) && (b===c) &&(a===c)){
+        console.log(+a+"," +b+"," +c+" " +"All these three numbers are basically the same, so no point in trying to find which is the greatest number")
+    }
+    else{
+        console.log(+c +" " +"is the greatest number of the given lot");
+        return c;
+
+    }
+
+}
+
+//10,20,30    
+
+function leastNumber(a,b,c){
+    if((a<b)&&(a<c)){
+        console.log(+a +" " +"is the least number of the given lot");
+        return a;
+    }
+    else if((b<a)&&(b<c)){
+        console.log(+b +" " +"is the least number of the given lot");
+        return b;
+    }
+    else if((a===b) && (b===c) &&(a===c)){
+        console.log(+a+"," +b+"," +c+" " +"All these three numbers are basically the same, so no point in trying to find which is the least number")
+    }
+    else{
+        console.log(+c +" " +"is the least number of the given lot");
+        return c;
+
+    }
+
+}
+
+
+fmsDelhi(average,highestNumber,leastNumber,1,2,3);
+
+
+//function as an argument to another function
+
+function zerodha(x){
+    console.log("the given number "+x);
+    console.log("  ");
+    return function(a,b,c){
+        po= a*b*c;
+        avgOfThenumbers =po/x;
+        console.log("the result of the entire operation is this  "+avgOfThenumbers);
+        return avgOfThenumbers;
+    }
+}
+
+zerodha(3)(1,1,1)
+

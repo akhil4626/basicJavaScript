@@ -208,3 +208,83 @@ operationOnConst(11);
 operationOnConst(12);
 operationOnConst(13);
 operationOnConst(14);
+
+
+
+//curlfying function
+
+function checkingGENERALRanges(min,max){
+return function(value){
+    if((value>=min) && (value<=max)){
+        console.log("yayy, you fit into the range perfectly");
+        console.log("  ");
+        return true;
+    }
+    else{
+       console.log("no");
+       console.log("  ");
+       return false;
+
+    }
+}
+}
+
+const minAgeForMarraige = checkingGENERALRanges(26,35);
+minAgeForMarraige(27);
+minAgeForMarraige(22);
+minAgeForMarraige(55);
+minAgeForMarraige(22);
+minAgeForMarraige(999);
+minAgeForMarraige(988752);
+
+
+const minMarksForQualyfingExamination = checkingGENERALRanges(35,100);
+minMarksForQualyfingExamination(101)
+
+
+
+//callback function
+function doItTwice(func){
+func();
+func();}
+
+function doWhatTwice(){
+    console.log("eat, sleep, repeat")
+}
+
+doItTwice(doWhatTwice);
+
+
+//callback function
+
+
+function greeting(name) {
+    console.log('Hello ' + name);
+  }
+  
+  function processUserInput(callback) {
+    var name = console.log('Please enter your name.');
+    callback(name);
+  }
+  
+  processUserInput(greeting);
+  
+  
+  //call back function
+  function doSomething(callback, num) {
+    callback(num);
+  }
+  
+  function printNumber(num) {
+    console.log(num);
+  }
+  
+  doSomething(printNumber, 42); // Output: 42
+  
+  
+  //arrow functions
+  const add = (x,y) =>{let z = x+y; console.log(z);
+return z;
+}
+
+add(3,4);

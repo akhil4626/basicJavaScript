@@ -277,6 +277,32 @@ function greeting(name) {
   
   function printNumber(num) {
     console.log(num);
+    
+    
+    
+    
+ hello = () => "Hello World!";
+
+
+
+  //curlyfying function
+
+//   function add(a) {
+//     return function(b) {
+//       return a + b;
+//     };
+//   }
+  
+//   console.log(add(2)(3)); // Output: 5
+
+
+//self- invocation function
+
+(function() {
+    var secret = "This is a secret message.";
+  console.log(secret)
+    
+  })();
   }
   
   doSomething(printNumber, 42); // Output: 42

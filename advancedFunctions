@@ -314,3 +314,54 @@ return z;
 }
 
 add(3,4);
+
+
+//immediatley invoked function expressions
+
+
+(function addSub(x,y){
+    let z = x +y;
+    let a = x*y;
+    console.log("the addition of two passed arguments is"+z);
+    console.log("the multiplication of two passed agruments is"+a);
+    return [z,a];
+})(11,22);
+
+
+//function grouping
+
+
+let functionGroupingAsAnObject = {
+  add: function add(x, y) {
+    let a = x + y;
+    console.log("the addition of given numbers is " + a);
+    return a;
+  },
+  sub: function sub(x, y) {
+    let b = x - y;
+    console.log("the subtraction of given numbers is " + b);
+    return b;
+  },
+  mul: function mul(x, y) {
+    let c = x * y;
+    console.log("the multiplication of given numbers is " + c);
+    return c;
+  },
+  div: function div(x, y) {
+    let d = x / y;
+    console.log("the division of given numbers is " + d);
+    return d;
+  },
+};
+
+const result = functionGroupingAsAnObject.add(3, 4);
+console.log(result);
+
+const result1 = functionGroupingAsAnObject.sub(3, 4);
+console.log(result1);
+
+const result2 = functionGroupingAsAnObject.mul(3, 4);
+console.log(result2);
+
+const result3 = functionGroupingAsAnObject.div(3, 4);
+console.log(result3);

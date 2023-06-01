@@ -365,3 +365,39 @@ console.log(result2);
 
 const result3 = functionGroupingAsAnObject.div(3, 4);
 console.log(result3);
+
+
+
+//another version of the above problems
+
+
+ let functionAsObject = {
+    add: function add(a,b){
+        let x = a+b;
+        console.log(x);
+        return x;
+    },
+
+    sub: function sub(a,b){
+        let y = a-b;
+        console.log(y);
+        return y;
+    },
+
+    mul: function mul(a,b){
+        let z = a*b;
+        console.log(z);
+        return z;
+    },
+
+    div: function div(a,b){
+        let c = a/b;
+        console.log(c);
+        return c;
+    },
+ }
+
+functionAsObject.div(3,4);
+functionAsObject.add(3,4);
+functionAsObject.sub(3,4);
+functionAsObject.mul(3,4);

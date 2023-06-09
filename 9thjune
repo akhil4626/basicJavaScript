@@ -1,0 +1,86 @@
+var http = require('http');
+var fs = require('fs');
+
+let myFunction = function(req, res) {
+  var url = req.url;
+
+  if (url.indexOf('index') > 0) {
+    fs.readFile("index.html", "utf-8", (err, data) => {
+      if (err) {
+        res.statusCode = 500;
+        res.end("Error reading index.html"); 
+      } else {
+        res.write(data);
+        res.end();
+      }
+    });
+  } else if (url.indexOf('home') > 0) {
+    fs.readFile("home.html", "utf-8", (err, data) => {
+      if (err) {
+        res.statusCode = 500;
+        res.end("Error reading home.html");
+      } else {
+        res.write(data);
+        res.end();
+      }
+    });
+  } else if(url.indexOf('styles')>0) {
+    fs.readFile("styles.css", "utf-8", (err, data) => {
+      if (err) {
+        res.statusCode = 500;
+        res.end("Error reading home.html");
+      } else {
+        res.write(data);
+        res.end();
+      }
+    });
+   
+
+  } else if(url.indexOf('jsonFrontEnd')>0) {
+    fs.readFile("jsonFrontEnd.js", "utf-8", (err, data) => {
+      if (err) {
+        res.statusCode = 500;
+        res.end("Error reading home.html");
+      } else {
+        res.write(data);
+        res.end();
+      }
+    });
+
+
+    
+   }
+   else if(url.indexOf('users')>0) {
+    console.log(url);
+    var queryStr = url.split('?')[1];
+    var parameters = queryStr.split("&");
+    for(var i=0;i<parameters.length;i++){
+       var param = parameters[i];
+      console.log(param);
+        var paramDetails =param.split("=");
+        console.log(paramDetails);
+    };
+    fs.readFile("sucess.html", "utf-8", (err, data) => {
+      if (err) {
+        res.statusCode = 500;
+        res.end("Error reading home.html");
+      } else {
+        res.write(data);
+        res.end();
+      }
+    });
+
+
+    
+   }
+   
+   
+   
+   else{
+    res.end(" it is a wrong file");
+  }
+};
+
+http.createServer(myFunction).listen((8000), () => {
+    console.log(`the server is running on port no 8000 please click  here http:\\ localhost:8000}` )
+})
